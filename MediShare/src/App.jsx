@@ -1,4 +1,3 @@
-import "./App.css";
 import F from "./front.jsx";
 function App() {
   
