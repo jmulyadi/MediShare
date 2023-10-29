@@ -22,8 +22,8 @@ export default function boxes() {
     <div className="profile-grid">
       {profiles.map((profile, index) => (
         <div key={index} className="profile-box">
-          <img className="profile-image" src={profile.imageUrl} alt={info[index]?.Name || profile.name} />
-          <h3 className="profile-name">{info[index]?.Name || profile.name}</h3>
+          <img className="profile-image" src={profile.imageUrl} alt={info[index]?.Name || "No Image"} />
+          <h3 className="profile-name">{info[index]?.Name || "Loading Name"}</h3>
           <h4 className="profile-name">{info[index]?.["Phone Number"] || "No Phone Number"}</h4>
           <p className="profile-description">{info[index]?.Specialty || "No Specialty"}</p>
         </div>
