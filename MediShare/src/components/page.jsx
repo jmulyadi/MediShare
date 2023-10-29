@@ -8,17 +8,15 @@ function Page() {
       {profiles
         .filter((profile, index) => index === 0) // Filter the first item
         .map((profile, index) => (
-          <div key={index} className="profile-box">
-            <a href="/other">
+          <div key={index} className="guy-box">
               <img
                 key={index}
-                className="profile-image"
+                className="guy-pic"
                 src={profile.imageUrl}
                 alt={profile.name}
               />
-            </a>
-            <h3 className="profile-name">{profile.name}</h3>
-            <p className="profile-description">{profile.description}</p>
+            <h3 className="guy">{profile.name}</h3>
+            <p className="guy">{profile.description}</p>
           </div>
         ))}
     </div>

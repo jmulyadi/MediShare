@@ -176,5 +176,18 @@ input[type="submit"] {
     background-color: #1b4a64; /* Change background color on hover */
   }
   
-
-
+.guy-box{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text horizontally */
+  height: 100vh;
+}
+.guy-pic{
+  width: 15rem; /* Make the images fill the entire box width */
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 10px; /* This rounds the edges e */
+  border: 3px solid black;
+}
