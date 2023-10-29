@@ -31,7 +31,6 @@
 
 /* Navbar Styles */
 .navbar {
-<<<<<<< HEAD
     background-color: #333; /* Background color */
     color: #fff; /* Text color */
     padding: 10px 0; /* Padding at the top and bottom */
@@ -78,17 +77,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
-   
-=======
-  background-color: #333; /* Background color */
-  color: #fff; /* Text color */
-  padding: 10px 0; /* Padding at the top and bottom */
-  border-radius: 10px;
-  font-family: Geneva, Verdana, sans-serif;
-  font-size: 20px;
-}
->>>>>>> ee6e4b7 (yuh)
+
 
 .nav-list {
   list-style: none; /* Remove list bullets */
