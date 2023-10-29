@@ -1,9 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import profiles from "../assets/data.js"
-import db from "./firebase.js"
+import profiles from "../assets/data.js";
+import db from "./firebase.js";
 import { onSnapshot, collection } from "firebase/firestore";
-
 
 export default function boxes() {
   const [info, setInfo] = useState([]);
@@ -11,10 +10,13 @@ export default function boxes() {
 
   console.log(info);
 
-  useEffect(() =>
-    onSnapshot(collection(db, "DoctorInfo"), (snapshot) =>
-      setInfo(snapshot.docs.map(doc => doc.data()))
-    ), []);
+  useEffect(
+    () =>
+      onSnapshot(collection(db, "DoctorInfo"), (snapshot) =>
+        setInfo(snapshot.docs.map((doc) => doc.data()))
+      ),
+    []
+  );
 
   return (
     <div className="profile-grid">
