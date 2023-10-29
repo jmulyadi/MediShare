@@ -18,13 +18,16 @@ export default function boxes() {
     []
   );
 
-  return (   
-      <div className="profile-grid">
-        {profiles.map((profile, index) => (
+  return (
+    <div className="profile-grid">
+      {profiles.map((profile, index) => {
+        const link = info[index]?.Website;
+        const shortenedLink = link ? link.substring(12) : "#";
+
+        return (
           <div key={index} className="profile-box">
-            <a href="/other">
+            <a href={shortenedLink}>
               <img
-                key={index}
                 className="profile-image"
                 src={profile.imageUrl}
                 alt={profile.name}
@@ -33,10 +36,9 @@ export default function boxes() {
             <h3 className="profile-name">{info[index]?.Name || "No Name Available"}</h3>
             <p>{info[index]?.["Phone Number"] || "No Phone Number"}</p>
             <p className=".profile-description">{info[index]?.Specialty || "No Specialty"}</p>
-            
           </div>
-        ))}
-      </div>
-
+        );
+      })}
+    </div>
   );
 }
