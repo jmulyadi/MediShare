@@ -1,13 +1,11 @@
 import React from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import { useState } from "react";
 
 
-export default function Header() {
+export default function boxes() {
   return (
     <div>
-      <h1>hey bae</h1>
+      <h1>Cock </h1>
     </div>
     //hi whats up 
     //Justin is so hawt

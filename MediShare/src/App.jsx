@@ -1,9 +1,12 @@
-import F from "./components/front.jsx";
+import Navbar from "./components/navbar.jsx";
+import Boxes from "./components/boxes.jsx";
+
 function App() {
   
   return (
     <>
-      <F />
+      <Navbar />
+      <Boxes />
     </>
   );
 }
