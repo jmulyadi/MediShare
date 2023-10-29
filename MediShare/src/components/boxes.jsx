@@ -7,9 +7,9 @@ export default function boxes() {
     <div className="profile-grid">
       {profiles.map((profile, index) => (
         <div key={index} className="profile-box">
-          <img src={profile.imageUrl} alt={profile.name} />
-          <h3>{profile.name}</h3>
-          <p>{profile.description}</p>
+          <img className = "profile-image" src={profile.imageUrl} alt={profile.name} />
+          <h3 className = "profile-name">{profile.name}</h3>
+          <p className =".profile-description">{profile.description}</p>
         </div>
       ))}
     </div>
