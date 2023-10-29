@@ -106,3 +106,13 @@
 body {
   background-color: #fffff0; /* Change the color code to the desired background color */
 }
+
+.filterbar{
+  text-align: right;
+}
+
+.filter{
+  margin-top: 20px;
+  text-align: center;
+  
+}

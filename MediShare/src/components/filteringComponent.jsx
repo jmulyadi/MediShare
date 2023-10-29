@@ -1,18 +1,16 @@
 import React from 'react';
 
-function FilteringComponent({ selectedFilter, onFilterChange, filterOptions }) {
+function FilterDropdown() {
   return (
-    <div className="filtering-component">
-      <label>Select a Filter:</label>
-      {/* <select value={selectedFilter} onChange={onFilterChange}>
-        {filterOptions.map((option) => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-      </select> */}
+    <div className="filterbar">
+      <label htmlFor="filter">Filter:</label>
+      <select className = "filter" id="filter">
+        <option value="location">Location</option>
+        <option value="specialty">Specialty</option>
+        <option value="needs">Needs</option>
+      </select>
     </div>
   );
 }
 
-export default FilteringComponent;
+export default FilterDropdown;
