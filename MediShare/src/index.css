@@ -64,6 +64,20 @@
   .nav-item a:hover {
     color: #00a1ff; /* Hover effect - change link color on hover */
   }
+
+  /* FilteringComponent.css */
+.filtering-component {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
    
 
   
