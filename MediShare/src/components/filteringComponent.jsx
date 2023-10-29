@@ -13,6 +13,10 @@ function FilterDropdown() {
 
   return (
     <div className="filterbar">
+      <form>
+        <input type="text" id="myInput" name="myInput" placeholder="Enter a drug" />
+        <input type="submit" value="Submit" />
+      </form>
       <select className="filter" id="filter" value={selectedFilter} onChange={handleFilterChange}>
         <option value="" disabled hidden>Select a Filter</option>
         <option value="location">Location</option>
@@ -20,6 +24,7 @@ function FilterDropdown() {
         <option value="needs">Needs</option>
       </select>
       <button onClick={resetSelection}>Reset Selection</button>
+
     </div>
   );
 }
