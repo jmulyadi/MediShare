@@ -1,0 +1,28 @@
+/* Add this CSS to your stylesheet or component */
+.profile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .profile-box {
+    width: calc(33.33% - 20px); /* Three boxes per row with some spacing */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 100%; /* Make the images fill the entire box width */
+    max-height: 200px; /* Limit the image height to maintain aspect ratio */
+    object-fit: cover;
+  }
+  
+  .profile-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .profile-description {
+    font-size: 1rem;
+  }
+  
