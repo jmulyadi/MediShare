@@ -118,6 +118,7 @@ body {
 
 .filter{
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-family: Geneva, Verdana, sans-serif;
   
@@ -137,5 +138,43 @@ button {
   button:hover {
     background-color: #1b4a64; /* Change background color on hover */
   }
+
+  /* Style for the text input */
+input[type="text"] {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px; /* Adjust the padding as needed */
+    border: 1px solid grey; /* Border color and width */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    
+  }
+  
+  /* Placeholder text style */
+  input[type="text"]::placeholder {
+    color: #999; /* Placeholder text color */
+  }
+  
+  /* Focus state style */
+  input[type="text"]:focus {
+    border-color: #007bff; /* Border color when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow when focused */
+  }
+
+  /* Style for the submit button */
+input[type="submit"] {
+    padding: 10px 15px; /* Adjust the padding as needed */
+    background-color: #00a1ff; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show a pointer cursor on hover */
+  }
+  
+  /* Hover effect */
+  input[type="submit"]:hover {
+    background-color: #1b4a64; /* Change background color on hover */
+  }
+  
 
 
