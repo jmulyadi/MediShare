@@ -1,0 +1,71 @@
+/* Add this CSS to your stylesheet or component */
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-box {
+  width: calc(33.33% - 20px); /* Three boxes per row with some spacing */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 15rem; /* Make the images fill the entire box width */
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 10px; /* This rounds the edges e */
+  border: 3px solid black;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.profile-description {
+  font-size: 1rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Padding at the top and bottom */
+    border-radius: 10px;
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+    
+  }
+  
+  .nav-list {
+    list-style: none; /* Remove list bullets */
+    display: flex; /* Display list items horizontally */
+    justify-content: space-around; /* Distribute list items evenly */
+    padding: 0;
+  }
+  
+  .nav-item {
+    text-align: center;
+  }
+  
+  .nav-item a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Link text color */
+    padding: 10px; /* Padding around links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+  
+    /* Hover effect - change link color on hover */
+    
+  }
+  .nav-item a:hover {
+    color: #00a1ff; /* Hover effect - change link color on hover */
+  }
+   
+
+  
+  
+

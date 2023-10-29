@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import profiles from "../assets/data.js"
 
 export default function boxes() {
   // const [allDocs, setAllDocs] = useState([]);
@@ -23,11 +23,14 @@ export default function boxes() {
 
 
   return (
-    //justin
-    <div>
-      <h1>piss is stored in the balls</h1>
+    <div className="profile-grid">
+      {profiles.map((profile, index) => (
+        <div key={index} className="profile-box">
+          <img className = "profile-image" src={profile.imageUrl} alt={profile.name} />
+          <h3 className = "profile-name">{profile.name}</h3>
+          <p className =".profile-description">{profile.description}</p>
+        </div>
+      ))}
     </div>
-    //hi whats up 
-    //Justin is so hawt
   );
 }
