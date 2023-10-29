@@ -31,6 +31,7 @@
 
 /* Navbar Styles */
 .navbar {
+<<<<<<< HEAD
     background-color: #333; /* Background color */
     color: #fff; /* Text color */
     padding: 10px 0; /* Padding at the top and bottom */
@@ -79,7 +80,38 @@
   }
   
    
+=======
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Padding at the top and bottom */
+  border-radius: 10px;
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+>>>>>>> ee6e4b7 (yuh)
 
-  
-  
+.nav-list {
+  list-style: none; /* Remove list bullets */
+  display: flex; /* Display list items horizontally */
+  justify-content: space-around; /* Distribute list items evenly */
+  padding: 0;
+}
 
+.nav-item {
+  text-align: center;
+}
+
+.nav-item a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Link text color */
+  padding: 10px; /* Padding around links */
+  transition: color 0.3s; /* Smooth color transition on hover */
+
+  /* Hover effect - change link color on hover */
+}
+.nav-item a:hover {
+  color: #00a1ff; /* Hover effect - change link color on hover */
+}
+body {
+  background-color: #fffff0; /* Change the color code to the desired background color */
+}
