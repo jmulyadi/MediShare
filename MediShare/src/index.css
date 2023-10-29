@@ -59,9 +59,13 @@
     transition: color 0.3s; /* Smooth color transition on hover */
   
     /* Hover effect - change link color on hover */
-    &:hover {
-      color: #00a1ff;
-    }
+    
   }
+  .nav-item a:hover {
+    color: #00a1ff; /* Hover effect - change link color on hover */
+  }
+   
+
+  
   
 
