@@ -30,8 +30,9 @@ export default function boxes() {
                 alt={profile.name}
               />
             </a>
-            <h3 className="profile-name">{profile.name}</h3>
-            <p className=".profile-description">{profile.description}</p>
+            <h3 className="profile-name">{info[index]?.Name || "No Name Available"}</h3>
+            <p>{info[index]?.["Phone Number"] || "No Phone Number"}</p>
+            <p className=".profile-description">{info[index]?.Specialty || "No Specialty"}</p>
             
           </div>
         ))}
