@@ -18,6 +18,11 @@
   object-fit: cover;
   border-radius: 10px; /* This rounds the edges e */
   border: 3px solid black;
+  display: inline-block; /* Ensures the link takes the size of the image */
+  transition: transform 0.3s; /* Adds a smooth transition effect */
+}
+.profile-image:hover{
+  transform: scale(1.05);
 }
 
 .profile-name {
