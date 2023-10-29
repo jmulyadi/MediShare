@@ -1,4 +1,4 @@
-import F from "./front.jsx";
+import F from "./components/front.jsx";
 function App() {
   
   return (
