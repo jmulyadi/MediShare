@@ -7,32 +7,32 @@ import u6 from "./pics/u6.jpg"
 
     const profiles = [
       {
-        name: 'User 1',
+        name: 'Justin Lee',
         imageUrl: u1,
         description: 'Description for User 1',
       },
       {
-        name: 'User 2',
+        name: 'Aishee Patel',
         imageUrl: u2,
         description: 'Description for User 2',
       },
       {
-        name: 'User 3',
+        name: 'Luis Jackre',
         imageUrl: u3,
         description: 'Description for User 3',
       },
       {
-        name: 'User 4',
+        name: 'Issie Fars',
         imageUrl: u4,
         description: 'Description for User 4',
       },
       {
-        name: 'User 5',
+        name: 'Olivia Hailer',
         imageUrl: u5,
         description: 'Description for User 5',
       },
       {
-        name: 'User 6',
+        name: 'Song White',
         imageUrl: u6,
         description: 'Description for User 6',
       },

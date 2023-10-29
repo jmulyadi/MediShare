@@ -64,8 +64,55 @@
   .nav-item a:hover {
     color: #00a1ff; /* Hover effect - change link color on hover */
   }
+
+  /* FilteringComponent.css */
+.filtering-component {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
    
 
-  
-  
 
+.nav-list {
+  list-style: none; /* Remove list bullets */
+  display: flex; /* Display list items horizontally */
+  justify-content: space-around; /* Distribute list items evenly */
+  padding: 0;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-item a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Link text color */
+  padding: 10px; /* Padding around links */
+  transition: color 0.3s; /* Smooth color transition on hover */
+
+  /* Hover effect - change link color on hover */
+}
+.nav-item a:hover {
+  color: #00a1ff; /* Hover effect - change link color on hover */
+}
+body {
+  background-color: #fffff0; /* Change the color code to the desired background color */
+}
+
+.filterbar{
+  text-align: right;
+}
+
+.filter{
+  margin-top: 20px;
+  text-align: center;
+  
+}
