@@ -4,7 +4,7 @@ import profiles from "../assets/data.js";
 import db from "./firebase.js";
 import { onSnapshot, collection } from "firebase/firestore";
 import Page from "./page"
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from "../App.jsx"
 
 export default function boxes() {
@@ -22,7 +22,7 @@ export default function boxes() {
   );
 
   return (
-    <Router>
+    // <Router>
       <div className="profile-grid">
       {profiles.map((profile, index) => (
         <div key={index} className="profile-box">
@@ -30,21 +30,22 @@ export default function boxes() {
           <h3 className="profile-name">{info[index]?.Name || "Loading Name"}</h3>
           <h4 className="profile-name">{info[index]?.["Phone Number"] || "No Phone Number"}</h4>
           <p className="profile-description">{info[index]?.Specialty || "No Specialty"}</p>
-          <Link to = "/page">
+          
+          {/* <Link to = "/page"> */}
             <img 
               key = {index}
               className="profile-image"
               src={profile.imageUrl}
               alt={profile.name}
             />
-          </Link>
+          {/* </Link> */}
           <h3 className="profile-name">{profile.name}</h3>
           <p className=".profile-description">{profile.description}</p>
-        <Route path = "/page" component = {Page}/>
-        <Route path="/"  component={Home} />
+        {/* <Route path = "/page" component = {Page}/> */}
+        {/* <Route path="/"  component={Home} /> */}
         </div>
       ))}
     </div>
-    </Router>
+    // </Router>
   );
 }
